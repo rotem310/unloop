@@ -33,6 +33,10 @@
     if (e.key === 'p' || e.key === 'P') set(view.hidden);
     else if (e.key === 'Escape' && !view.hidden) set(false);
   });
-  let saved = false; try { saved = localStorage.getItem(KEY) === '1'; } catch (e) {}
-  if ((saved || /[?&]phone=1/.test(location.search)) && window.innerWidth >= 900) set(true);
+  // Default on wide screens; a visitor's own choice (button / P key) or ?phone=0 turns it off
+  let want = true;
+  try { if (localStorage.getItem(KEY) === '0') want = false; } catch (e) {}
+  if (/[?&]phone=0/.test(location.search)) want = false;
+  if (/[?&]phone=1/.test(location.search)) want = true;
+  if (want && window.innerWidth >= 900) set(true);
 })();

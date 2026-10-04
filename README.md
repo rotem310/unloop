@@ -54,7 +54,7 @@ On a desktop the page can be shown inside an iPhone frame (390 x 844) with Safar
 
 - the toggle button on the page,
 - the **P** key, or
-- `?phone=1` at the end of the URL.
+- `?phone=1` at the end of the URL. It is on by default on wide screens; use `?phone=0` to start without it.
 
 ## Run it
 
