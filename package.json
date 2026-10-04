@@ -1,0 +1,12 @@
+{
+  "name": "unloop-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unloop: a mobile-first landing page (plain HTML, CSS and JavaScript, no build step)",
+  "scripts": {
+    "start": "node landing/serve.mjs 8460"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

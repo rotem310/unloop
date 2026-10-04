@@ -12,6 +12,9 @@ Mobile App Marketing Website*/
 *.zip
 Select Apps Screen.png
 
+# local preview helpers (the repo uses `npm start`)
+serve-nocache*.py
+
 # misc
 node_modules/
 __pycache__/
