@@ -1,0 +1,18 @@
+# macOS / editor
+.DS_Store
+.claude/
+
+# local working copies and screenshots
+landing-backup-*/
+landing-v2/
+proof/
+
+# old website files and downloads (not part of this project)
+Mobile App Marketing Website*/
+*.zip
+Select Apps Screen.png
+
+# misc
+node_modules/
+__pycache__/
+*.log
